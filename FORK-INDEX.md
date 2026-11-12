@@ -58,3 +58,6 @@ Sweep ran 18:08–18:21 CST, zero Muse tokens. Tallies from the log itself:
 - meta/componentkit
 - meta/PathPicker
 - …full list in fork-sweep.log
+
+## CORRECTION — account-side verification (2026-11-11 ~6:24 PM CST, gh live read, old-with-new)
+The log-based tally above (FORKED 9 / FAILED 262) UNDERCOUNTS the forks. GitHub-side read of the account shows **21 forks actually live**: folly, zstd, pytorch, hhvm, rocksdb, facebook-ios-sdk, watchman, react, lexical, open-webui, ollama, ember, docusaurus, facebook-android-sdk, SillyTavern, chef-utils, llama-cookbook, llama-models, open-graph-protocol, mysql-5.6, pyre2. Lesson filed: many "FAILED" log lines were API errors on forks that landed anyway — verify account-side, not log-side. Stars: 271, as logged.
